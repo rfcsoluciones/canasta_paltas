@@ -1,0 +1,448 @@
+<!doctype html>
+<!--[if lte IE 9]> <html class="lte-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Remove Tap Highlight on Windows Phone IE -->
+    <meta name="msapplication-tap-highlight" content="no"/>
+
+    <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32">
+
+    <title>Altair Admin Landing Page</title>
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="bower_components/uikit/css/uikit.almost-flat.min.css" media="all">
+
+    <!-- altair landing page -->
+    <link rel="stylesheet" href="assets/css/main.css" media="all">
+
+    <!-- matchMedia polyfill for testing media queries in JS -->
+    <!--[if lte IE 9]>
+        <script type="text/javascript" src="bower_components/matchMedia/matchMedia.js"></script>
+        <script type="text/javascript" src="bower_components/matchMedia/matchMedia.addListener.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- navigation -->
+    <header id="header_main">
+        <nav class="uk-navbar">
+            <div class="uk-container uk-container-center">
+                <img src="assets/img/logo_main.png" alt="" width="142" height="63" class="">
+                 <div class="uk-navbar-flip"><a href="#" id="mobile_navigation_toggle" data-uk-offcanvas="{target:'#mobile_navigation'}"><em class="material-icons"></em></a>
+                  <ul class="uk-navbar-nav" id="main_navigation">
+                    <li><a href="#sect-overview">QUIENES SOMOS</a></li>
+                    <li> <a href="#sect-features">NUESTRO SERVICIO</a></li>
+                      <li>
+                            <a href="#sect-gallery">
+                                Nuestros socios
+                            </a>
+                        </li>
+                        <li> </li>
+                        <li>
+                            <a href="#sect-team">
+                                Equipo
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sect-contact">
+                                Contáctanos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="mobile_navigation" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+            <ul>
+                <li>
+                    <a href="#sect-overview" data-uk-smooth-scroll="{offset: 48}">
+                        <span class="menu_icon"><i class="material-icons">&#xE417;</i></span>
+                        <span class="menu_title">Quienes Somos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sect-features" data-uk-smooth-scroll="{offset: 48}">
+                        <span class="menu_icon"><i class="material-icons">&#xE896;</i></span>
+                        <span class="menu_title"> Nuestro Servicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sect-gallery" data-uk-smooth-scroll="{offset: 48}">
+                        <span class="menu_icon"><i class="material-icons">&#xE410;</i></span>
+                        <span class="menu_title">Nuestros Socios</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sect-team" data-uk-smooth-scroll="{offset: 48}">
+                        <span class="menu_icon"><i class="material-icons">&#xE7FB;</i></span>
+                        <span class="menu_title">Equipo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sect-contact" data-uk-smooth-scroll="{offset: 48}">
+                        <span class="menu_icon"><i class="material-icons">&#xE0E1;</i></span>
+                        <span class="menu_title">Contáctanos</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="banner" id="sect-overview">
+        <div data-uk-slideshow="{animation: 'swipe'}" data-uk-parallax="{yp: '25', velocity: '0.4'}">
+            <ul class="uk-slideshow">
+                <li style="background-image: url('assets/img/slider/IMG8.jpg')">
+               
+                    <div class="uk-container uk-container-center">
+                        <div class="slide_content_a">
+                          <h2 class="slide_header">Consultoría informática orientada a MYPES<br></h2>
+                          <p> En RFC tenemos como objetivo brindar la mejor solución informática a MYPEs a través de softwares de gestión que optimicen los procesos funcionales e incrementen la  competitividad empresarial.
+   </p>
+                          <p><a class="md-btn md-btn-large md-btn-danger">Contáctanos</a></p>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url('assets/img/slider/IMG9.jpg')">
+                    <div class="uk-container uk-container-center">
+                        <div class="slide_content_b">
+                          <h2 class="slide_header">Te brindamos la solución informática que necesitas</h2>
+                          <p>En RFC contamos con una amplia gama de productos y servicios tecnológicos que podrán fortalecer a tu empresa y mejorar la atención a tus clientes</p>
+                          <a class="md-btn md-btn-large">Contáctanos</a></div>
+                          
+                    </div>
+                </li>
+                 <li style="background-image: url('assets/img/slider/IMG5.jpg')">
+                    <div class="uk-container uk-container-center">
+                        <div class="slide_content_c">
+                            <h2 class="slide_header">Fomentamos la Innovación</h2>
+                            <p>
+                               Nuestro compromiso con los emprendedores, nos permite impulsar el crecimiento, fomentar la innovación y asegurar que hoy estemos trabajando con más de los líderes globales del mañana. 
+                            </p>
+                            <a href="" class="md-btn md-btn-large md-btn-success">Conócenos más</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="slide_navigation">
+                <a href="" class="uk-slidenav uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+                <a href="" class="uk-slidenav uk-slidenav-next" data-uk-slideshow-item="next"></a>
+                <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+                    <li data-uk-slideshow-item="0"><a href=""></a></li>
+                    <li data-uk-slideshow-item="1"><a href=""></a></li>
+                    <li data-uk-slideshow-item="2"><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section_dark md-bg-indigo-700">
+        <div class="uk-container uk-container-center animate" data-uk-scrollspy="{cls:'uk-animation-slide-right animated',target:'> *',delay:300}">
+            <h2 class="heading_a heading_light uk-text-center-medium">
+                Tenemos la solución para tu empresa 
+                <span class="sub-heading">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </span>
+            </h2>
+        </div>
+    </section>
+
+    <section class="section section_large" id="sect-features">
+        <div class="uk-container uk-container-center">
+            <div class="uk-grid">
+                <div class="uk-width-large-3-5 uk-container-center uk-text-center">
+                  <h2 class="heading_b">No te preocupes!</h2>
+                  <h3 class="heading_b">Cuentas con nosotros. </h3>
+                  <h2 class="heading_b"><span class="sub-heading">Está clarísimo que hoy en día necesitamos de la tecnología para alcanzar el éxito empresarial. Con RFC tendrás el mejor asesoramiento informático &nbsp;a un precio pensado para ti</span> </h2>
+                </div>
+            </div>
+            <div class="uk-grid uk-grid-width-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-5 animate" data-uk-grid-margin data-uk-scrollspy="{cls:'uk-animation-slide-bottom animated',target:'> *',delay:300,topoffset:-100}">
+                <div>
+                  <div class="uk-text-center uk-margin-bottom">
+                        <i class="material-icons icon_large icon_dark">&#xE263;</i>
+                    </div>
+                  <h3 class="heading_c uk-text-center">Ahorra en costos </h3>
+                  <p> Nuestras soluciones &nbsp;rentabilizan a tu empresa &nbsp;haciendo más eficientes tus procesos </p>
+                  <p>&nbsp;</p>
+                </div>
+                <div>
+                    <div class="uk-text-center uk-margin-bottom"><em class="material-icons icon_large icon_dark"></em></div>
+                  <h3 class="heading_c uk-text-center">Reportes de información</h3>
+                  <p>Ventas diarias, gestión de procesos , hasta tu cartera de clientes. Podrás controlar todo lo que imagines!</p>
+                </div>
+                <div>
+                    <div class="uk-text-center uk-margin-bottom"><em class="material-icons icon_large icon_dark"></em></div>
+                  <h3 class="heading_c uk-text-center">Mejores Decisiones</h3>
+                  <p>El análisis de los reportes de tu empresa te ayudarán a dar ese giro que te lleve hacia el éxito empresarial</p>
+                </div>
+                <div>
+                    <div class="uk-text-center uk-margin-bottom">
+                        <i class="material-icons icon_large icon_dark md-color-red-500">&#xE3AF;</i>
+                    </div>
+                  <h3 class="heading_c uk-text-center">Hazla más Competitiva</h3>
+                  <p>Las herramientas tecnológicas hacen más eficientes los servicios y procesos de tu empresa.</p>
+                </div>
+                <div>
+                  <div class="uk-text-center uk-margin-bottom"><em class="material-icons icon_large icon_dark"></em></div>
+                  <h3 class="heading_c uk-text-center">Sé el mejor en el mercado</h3>
+                  <p>Intégrate en la era digital y posiciónate como la empresa líder en el mercado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section_gallery md-bg-blue-grey-50" id="sect-gallery">
+        <div class="uk-container uk-container-center uk-invisible" data-uk-scrollspy="{cls:'uk-animation-fade uk-invisible',delay:300,topoffset:-150}">
+          <h2 class="heading_c uk-margin-medium-bottom uk-text-center-medium">Tenemos a disposición el software ideal para tu empresa<span class="sub-heading">Somos distribuidores autorizados de los productos de diversas Desarrolladoras de Softwares de Gestión </span> </h2>
+          <div data-uk-slider>
+                <div class="uk-slider-container">
+                    <ul class="uk-grid uk-grid-small uk-slider uk-grid-width-medium-1-3 uk-grid-width-large-1-4">
+                        <li>
+                            <div class="md-card">
+                                <div class="md-card-content padding-reset"><a href="http://www.solinsur.net/Default.aspx" target="_blank"><img src="assets/img/gallery/solinsur1.jpg" alt=""></a></div>
+                                <div class="md-card-footer"><h4 class="md-card-footer-head"></h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="md-card">
+                                <div class="md-card-content padding-reset"><a href="http://www.egafutura.com/" target="_blank"><img src="assets/img/gallery/egafutura.jpg" alt=""></a></div>
+                                <div class="md-card-footer">
+                                    <h4 class="md-card-footer-head"></h4>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="md-card">
+                                <div class="md-card-content padding-reset"><a href="http://www.sdelsol.com/" target="_blank"><img src="assets/img/gallery/delsol.jpg" alt=""></a></div>
+                                <div class="md-card-footer">
+                                    <h4 class="md-card-footer-head"></h4>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="md-card">
+                                <div class="md-card-content padding-reset"><a href="http://www.ofi.es/" target="_blank"><img src="assets/img/gallery/ofimatica.jpg" alt=""></a></div>
+                                <div class="md-card-footer">
+                                    <h4 class="md-card-footer-head"></h4>
+                                   
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="md-card">
+                                <div class="md-card-content padding-reset"><a href="http://www.info-edu.net/" target="_blank"><img src="assets/img/gallery/infoedu.jpg" alt=""></a></div>
+                                <div class="md-card-footer">
+                                    <h4 class="md-card-footer-head"></h4>
+                                   
+                                </div>
+                            </div>
+                        </li>
+                        
+                        
+                     
+                      
+                    </ul>
+                </div>
+                <div class="slide_navigation">
+                    <a href="" class="uk-slidenav uk-slidenav-previous" data-uk-slider-item="previous"></a>
+                    <a href="" class="uk-slidenav uk-slidenav-next" data-uk-slider-item="next"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+<hr>
+<section class="section md-bg-blue-grey-50" id="sect-team">
+    <div class="uk-container uk-container-center uk-invisible" data-uk-scrollspy="{cls:'uk-animation-scale-up uk-invisible',delay:300,topoffset:-100}">
+            <div class="uk-grid uk-margin-large-bottom">
+                <div class="uk-width-large-3-5 uk-container-center uk-text-center">
+                  <h2 class="heading_b">Nuestro Equipo </h2>
+                  <h2 class="heading_b"><br>
+                  </h2>
+                </div>
+            </div>
+            <div class="uk-tab-center uk-margin-medium-bottom">
+                <ul class="uk-tab uk-tab-large" data-uk-tab="{connect:'#team_tabbed',animation: 'slide-bottom'}">
+                    <li class="uk-active"><a href="#">Consultores</a></li>
+                    <li><a href="#">Ventas</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                </ul>
+            </div>
+            <ul id="team_tabbed" class="uk-switcher uk-margin">
+                <li>
+                    <div class="uk-grid uk-grid-medium uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4" data-uk-grid-margin>
+                       <div class="uk-row-first md-input-width-large"> 
+                        <div class="md-card">
+                         </div>
+                         </div>
+                       <div>
+                            <div class="md-card">
+                                <div class="md-card-head md-bg-light-blue-600">
+                                    <div class="uk-text-center">
+                                        <img class="md-card-head-avatar" src="assets/img/avatars/josema1.jpg" alt=""/>
+                                    </div>
+                                    <h3 class="md-card-head-text uk-text-center">Josemaría Juarez</h3>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                       
+              </li>
+                <li>
+                    <div class="uk-grid uk-grid-medium uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4" data-uk-grid-margin>
+                        <div class="md-input-width-large">
+                            <div class="md-card">
+                                
+                            </div>
+                        </div>
+                        <div>
+                            <div class="md-card">
+                                <div class="md-card-head">
+                                    <div class="uk-text-center">
+                                        <img class="md-card-head-avatar" src="assets/img/avatars/kory1.jpg" alt=""/>
+                                    </div>
+                                    <h3 class="md-card-head-text uk-text-center"> Kory Rosales <span class="uk-text-truncate">ventas@rfcsoluciones.com</span> </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="md-card">
+                                <div class="md-card-head">
+                                    <div class="uk-text-center">
+                                        <img class="md-card-head-avatar" src="assets/img/avatars/kathy1.jpg" alt=""/>
+                                    </div>
+                                    <h3 class="md-card-head-text uk-text-center"> Kathy Tello <span class="uk-text-truncate">ventas@rfcsoluciones.com</span> </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-grid uk-grid-medium uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4" data-uk-grid-margin>
+                        <div class="md-input-width-large">
+                            <div class="md-card">
+                                
+                            </div>
+                        </div>
+                        <div>
+                            <div class="md-card">
+                                <div class="md-card-head">
+                                    <div class="uk-text-center">
+                                        <img class="md-card-head-avatar" src="assets/img/avatars/karen1.jpg" alt=""/>
+                                    </div>
+                                    <h3 class="md-card-head-text uk-text-center">
+                                        Karen Alvitez
+                                        <span class="uk-text-truncate"></span>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                       
+                  </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section section_large" id="sect-contact">
+        <div class="uk-container uk-container-center">
+            <div class="uk-grid uk-grid-divider" data-uk-grid-margin>
+                <div class="uk-width-large-2-5">
+                  <h3 class="heading_c uk-margin-large-bottom">Contáctanos</h3>
+                  <form method="POST" action="contacto.php" >
+                        <div class="uk-form-row">
+                            <div class="uk-grid" data-uk-grid-margin>
+                                <div class="uk-width-medium-1-2">
+                                  <label for="nombre">Nombre</label>
+                                  <input id="nombre" type="text" name="nombre" class="md-input" required=""/>
+                                </div>
+                                <div class="uk-width-medium-1-2">
+                                    <label for="apellidos">Apellidos</label>
+                                    <input id="apellidos" type="text" name="apellidos" class="md-input" required="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-form-row">
+                          <label for="email">E-Mail</label>
+                          <input id="email" type="email" name="email" class="md-input" required="" />
+                        </div>
+                        <div class="uk-form-row">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="4" class="md-input"></textarea>
+                        </div>
+                        <div class="uk-form-row">
+                            <button id="submit" type="submit" name="submit" 
+                            class="md-btn md-btn-success md-btn-large" formaction="contacto.php">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="uk-width-large-3-5">
+                  <h3 class="heading_c uk-margin-large-bottom">Información de contacto</h3>
+                  <p class="uk-margin-large-bottom">Deseas informarte respecto a nuestro servicio? Quieres saber si contamos con un software para tu empresa? </p>
+                  <p class="uk-margin-large-bottom">Eres una empresa desarrolladora de software y quieres ser parte de nuestros socios?</p>
+                  <p class="uk-margin-large-bottom">Para cualquier duda, consulta o informe, por favor llena tus datos en el formulario y un asesor especializado se contactará contigo.</p>
+                  <p class="uk-margin-large-bottom">&nbsp;</p>
+                  <p> <em class="material-icons md-24 uk-margin-small-right"></em> (+51) 969-922-435</p>
+                  <p> <em class="material-icons md-24 uk-margin-small-right"></em> consultas@rfcsoluciones.com </p>
+                    <p> <em class="material-icons md-24 uk-margin-small-right"></em>Jirón Santa María 155, Urb Santa Isabel, Piura- Piura, PERÚ<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section_dark md-bg-blue-grey-700">
+        <div class="uk-container uk-container-center">
+            <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-width-medium-3-5 uk-text-center-medium">
+                    Copyright &copy; 2016 Altair (tzd), All rights reserved.
+                </div>
+                <div class="uk-width-medium-2-5">
+                    <div class="uk-align-medium-right uk-text-center-medium">
+                        <a href="#" class="uk-margin-medium-right" data-uk-tooltip="{offset: 12}" title="Facebook"><i class="uk-icon-facebook uk-icon-small md-color-white"></i></a><!--
+                        --><a href="#" class="uk-margin-medium-right" data-uk-tooltip="{offset: 12}" title="Twitter"><i class="uk-icon-twitter uk-icon-small md-color-white"></i></a><!--
+                        --><a href="#" class="uk-margin-medium-right" data-uk-tooltip="{offset: 12}" title="LinkedIn"><i class="uk-icon-linkedin uk-icon-small md-color-white"></i></a><!--
+                        --><a href="#" data-uk-tooltip="{offset: 12}" title="Google Plus"><i class="uk-icon-google-plus uk-icon-small md-color-white"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- google web fonts -->
+    <script>
+        WebFontConfig = {
+            google: {
+                families: [
+                    'Source+Code+Pro:400,700:latin',
+                    'Roboto:300,400,500,700,400italic:latin'
+                ]
+            }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
+    <!-- common functions -->
+    <script src="assets/js/common.min.js"></script>
+    <!-- uikit functions -->
+    <script src="assets/js/uikit_custom.min.js"></script>
+    <!-- altair common functions/helpers -->
+    <script src="assets/js/altair_lp_common.js"></script>
+
+</body>
+</html>
